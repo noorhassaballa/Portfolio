@@ -1,3 +1,75 @@
-#header {
-  background-color: #333;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+header {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  background-color: rgba(0, 0, 0, 0.66);
+  backdrop-filter: blur(8px);
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  z-index: 1000;
+}
+.logo {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-wrap: nowrap;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+.logo:hover{
+  transform: scale(1.1)
+}
+.nav-links{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+li a{
+  position: relative;
+  color:#fff;
+  font-weight: 300;
+  text-decoration: none;
+}
+li a::before{
+  position: absolute;
+  content: '';
+  width: 0;
+  left: 0;
+  height: 5px;
+  top: 25px;
+  border-radius: 1rem;
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(90deg,rgba(0, 195, 255, 1) 0%, rgba(251, 0, 255, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+li a:hover::before {
+  width: 100%;
+}
+
+.visit-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  text-wrap: nowrap;
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(90deg,rgba(0, 195, 255, 1) 0%, rgba(251, 0, 255, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+.visit-btn:hover {
+  transform: scale(1.03);
 }
