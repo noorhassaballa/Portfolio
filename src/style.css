@@ -196,3 +196,34 @@ section {
 ::-webkit-scrollbar-thumb{
   background: linear-gradient(to bottom,rgba(0, 195, 255, 1) 0%, rgba(251, 0, 255, 1) 50%, rgba(237, 221, 83, 1) 100%);;
 }
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.project-card {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  border: 2px solid #000;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.project-card:hover {
+  background-color: #000 ;
+  color: #fff;
+  transform: translateY(-10px) scale(1.02);
+}
+.project-card img{
+  width: 20vw;
+  border-radius: 1rem;
+}
+.project-card:hover .btn{
+  border: 2px solid #fff;
+  color: #fff;
+}
