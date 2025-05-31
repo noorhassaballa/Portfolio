@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: Montserrat, sans-serif;
 }
+#app{
+  /* background-color: #000000d0; */
+}
 header {
   position: fixed;
   top: 1rem;
@@ -12,10 +15,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
-  background-color: rgba(0, 0, 0, 0.66);
+  gap: 6rem;
+  background-color: rgba(0, 0, 0, 0.742);
   backdrop-filter: blur(8px);
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 3rem;
   border-radius: 3rem;
   z-index: 1000;
 }
@@ -32,7 +35,7 @@ header {
 }
 .nav-links{
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   list-style: none;
 }
 li a{
@@ -40,6 +43,7 @@ li a{
   color:#fff;
   font-weight: 300;
   text-decoration: none;
+  font-size: 1.2rem;
 }
 li a::before{
   position: absolute;
@@ -50,7 +54,7 @@ li a::before{
   top: 25px;
   border-radius: 1rem;
   transition: 0.3s ease-in-out;
-  background: linear-gradient(90deg,rgba(0, 195, 255, 1) 0%, rgba(251, 0, 255, 1) 50%, rgba(237, 221, 83, 1) 100%);
+  background: linear-gradient(27deg,rgba(212, 199, 17, 1) 0%, rgba(244, 31, 255, 1) 100%);
 }
 li a:hover::before {
   width: 100%;
@@ -64,7 +68,7 @@ li a:hover::before {
   color: white;
   cursor: pointer;
   text-wrap: nowrap;
-  background: linear-gradient(139deg,rgba(195, 0, 255, 1) 0%, rgba(251, 0, 255, 1) 38%, rgba(237, 221, 83, 1) 100%);
+  background: linear-gradient(27deg,rgba(212, 199, 17, 1) 0%, rgba(244, 31, 255, 1) 100%);
   background-size: 200% 100%;
   background-position: 100% 0%;
   transition: background-position 3s;
@@ -87,10 +91,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10rem;
+  gap: 5rem;
 }
 .about img {
-  width: 30vw;
+  width: 25vw;
   border-radius: 50%;
   padding-top: 2rem;
 }
@@ -112,7 +116,7 @@ section {
   font-weight: 600; 
 }
 .info-box span{
-  background: linear-gradient(90deg,rgba(0, 195, 255, 1) 0%, rgba(251, 0, 255, 1) 50%, rgba(237, 221, 83, 1) 100%);
+  background: linear-gradient(27deg,rgba(244, 31, 255, 1) 0%, rgba(212, 199, 17, 1) 100%);
   background-clip: text;
   color: transparent;
   font-size: 2rem;
@@ -151,12 +155,13 @@ section {
   font-size: 4rem;
   font-weight: 600;
   margin-bottom: 3rem;
+  gap: 1rem;
 }
 .experience-info{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 1rem;
 }
 
 .grid{
@@ -183,7 +188,7 @@ section {
 .grid-card span{
   font-size: 1.5rem;
   font-weight: 500;
-  background: linear-gradient(90deg,rgba(0, 195, 255, 1) 0%, rgba(251, 0, 255, 1) 50%, rgba(237, 221, 83, 1) 100%);
+  background: linear-gradient(27deg,rgba(244, 31, 255, 1) 0%, rgba(212, 199, 17, 1) 100%);
   background-clip: text;
   color: transparent;
 }
@@ -218,7 +223,7 @@ section {
   justify-content: center;
   text-align: center;
   gap: 1.5rem;
-  border: 2px solid #000;
+  border: 2px solid black;
   border-radius: 3rem;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
@@ -226,7 +231,7 @@ section {
 .project-card:hover {
   background-color: #000 ;
   color: #fff;
-  transform: linear-gradient(139deg,rgba(195, 0, 255, 1) 0%, rgba(251, 0, 255, 1) 38%, rgba(237, 221, 83, 1) 100%);scale(1.01);
+  transform: scale(1.01);
 }
 .project-card img{
   width: 20vw;
@@ -239,9 +244,60 @@ section {
 .project-card:hover .btn:hover{
   border: 2px solid #fff;
   background-color: #fff;
-  color: #fff;
+  color: #000000;
 }
 .project-card h3{
   font-size: 1.8rem;
   font-weight: 500;
+}
+.input-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.input-box input{
+  position: relative;
+  border-radius: 3rem;
+  border: 2px solid black;
+  padding: 2rem 10rem;
+  font-size: 2rem;
+}
+.input-box input::placeholder{
+  font-size: 1.8rem;
+  text-align: center;
+}
+.input{
+  position: relative;
+}
+.input i{
+  position: absolute;
+  font-size: 4rem;
+  top: 50%;
+  left: 10px;
+  transform: translate(50%, -50%);
+}
+footer{
+  bottom: 0;
+  left: 0;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer ul{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+}
+footer ul li a{
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
 }
