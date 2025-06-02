@@ -5,7 +5,7 @@
   font-family: Montserrat, sans-serif;
 }
 #app{
-  /* background-color: #000000d0; */
+  background-color: #000000;
 }
 header {
   position: fixed;
@@ -43,7 +43,7 @@ li a{
   color:#fff;
   font-weight: 300;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 li a::before{
   position: absolute;
@@ -82,21 +82,23 @@ section {
   width: 100%;
   position: relative;
 }
-.about {
+.info {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
+
 }
-.about .about-container {
+.info .info-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5rem;
 }
-.about img {
-  width: 25vw;
+.info img {
+  width: 30vw;
   border-radius: 50%;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 .info-box {
   display: flex;
@@ -128,15 +130,16 @@ section {
 .btn{
   border-radius: 3rem;
   padding: 0.5rem 1.5rem;
-  border: 2px solid black;
+  border: 2px solid #fff;
+  color: #fff;
   cursor: pointer;
   font-weight: 500;
   text-wrap: nowrap;
   transition: 0.2s ease-in-out;
 }
 .btn:hover{
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 .socials{
   display: flex;
@@ -156,6 +159,16 @@ section {
   font-weight: 600;
   margin-bottom: 3rem;
   gap: 1rem;
+  color: #fff;
+}
+.about{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+i{
+  font-size: 1rem;
 }
 .experience-info{
   display: flex;
@@ -163,15 +176,15 @@ section {
   justify-content: center;
   gap: 1rem;
 }
-
 .grid{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 2rem;
 }
 .grid-card{
-  border: 2px solid black;
+  border: 2px solid #fff;
   border-radius: 3rem;
+  color: #fff;
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -182,8 +195,7 @@ section {
 }
 .grid-card:hover{
   transform: scale(1.02);
-  background-color: black;
-  color: white;
+  background-color: rgb(11, 11, 11);
 }
 .grid-card span{
   font-size: 1.5rem;
@@ -192,23 +204,20 @@ section {
   background-clip: text;
   color: transparent;
 }
-
 ::-webkit-scrollbar{
   display: block;
   width: 15px;
-  color:#fff;
 }
 ::-webkit-scrollbar-button {
   display: none;
 }
 ::-webkit-scrollbar-track{
-  background-color: transparent;
+  background: #000;
 }
 ::-webkit-scrollbar-thumb{
-  background-color: #a6a6a6;
   border: 5px solid transparent;
   border-radius: 24px;
-  box-shadow: 4px 0px 0px 4px var(--scrollbar-color) inset;
+  background: #fff;
 }
 .projects-grid{
   display: grid;
@@ -223,23 +232,20 @@ section {
   justify-content: center;
   text-align: center;
   gap: 1.5rem;
-  border: 2px solid black;
+  border: 2px solid #fff;
   border-radius: 3rem;
+  color: #fff;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
 .project-card:hover {
   background-color: #000 ;
-  color: #fff;
-  transform: scale(1.01);
+  transform: scale(1.02);
+  background-color: rgb(11, 11, 11);
 }
 .project-card img{
   width: 20vw;
   border-radius: 1rem;
-}
-.project-card:hover .btn{
-  border: 2px solid #fff;
-  color: #fff;
 }
 .project-card:hover .btn:hover{
   border: 2px solid #fff;
@@ -264,10 +270,11 @@ section {
   border-radius: 3rem;
   border: 2px solid black;
   padding: 2rem 10rem;
-  font-size: 2rem;
+  font-size: 1rem;
+  background-color: #1a1a1a;
 }
 .input-box input::placeholder{
-  font-size: 1.8rem;
+  font-size: 1rem;
   text-align: center;
 }
 .input{
@@ -296,7 +303,7 @@ footer ul{
   list-style: none;
 }
 footer ul li a{
-  color: #000;
+  color: #ffffff;
   font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
